@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% load static %}
+<div class="sidebar" id="sidebar">
+            <div class="sidebar-inner slimscroll">
+               <div id="sidebar-menu" class="sidebar-menu">
+                  <ul>
+                     <li class="menu-title">
+                        <span>Main Menu</span>
+                     </li>
+                     <li>
+                        <a href="{% url 'hod_home' %}"><i class="fas fa-holly-berry"></i> <span>Dashboard</span></a>
+                     </li>
+                     <li class="submenu">
+                        <a href="#"><i class="fas fa-user-graduate"></i> <span> Students</span> <span class="menu-arrow"></span></a>
+                        <ul>
+                           <li><a href="{% url 'add_student' %}">Add Students</a></li>
+                           <li><a href="edit-student.html">View Students</a></li>
+                        </ul>
+                     </li>
+                     <li class="submenu">
+                        <a href="#"><i class="fas fa-chalkboard-teacher"></i> <span> Professors</span> <span class="menu-arrow"></span></a>
+                        <ul>
+                           <li><a href="teacher-details.html">Professor View</a></li>
+                           <li><a href="add-teacher.html">Professor Add</a></li>
+                           <li><a href="edit-teacher.html">Professor Edit</a></li>
+                        </ul>
+                     </li>
+                     <li class="submenu">
+                        <a href="#"><i class="fas fa-graduation-cap"></i> <span> Courses</span> <span class="menu-arrow"></span></a>
+                        <ul>
+                           <li><a href="departments.html">Courses List</a></li>
+                           <li><a href="add-department.html">Course Add</a></li>
+                           <li><a href="edit-department.html">Course Edit</a></li>
+                        </ul>
+                     </li>
+                     <li class="submenu">
+                        <a href="#"><i class="fas fa-book-reader"></i> <span> Subjects</span> <span class="menu-arrow"></span></a>
+                        <ul>
+                           <li><a href="subjects.html">Subject List</a></li>
+                           <li><a href="add-subject.html">Subject Add</a></li>
+                           <li><a href="edit-subject.html">Subject Edit</a></li>
+                        </ul>
+                     </li>
+                     <li class="submenu">
+                        <a href="#"><i class="fa fa-clock"></i> <span> Session</span> <span class="menu-arrow"></span></a>
+                        <ul>
+                           <li><a href="subjects.html">Session List</a></li>
+                           <li><a href="add-subject.html">Session Add</a></li>
+                           <li><a href="edit-subject.html">Session Edit</a></li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="holiday.html"><i class="fas fa-comments"></i> <span>Professor Feedback</span></a>
+                     </li>
+                     <li>
+                        <a href="holiday.html"><i class="fas fa-comments"></i> <span>Student Feedback</span></a>
+                     </li>
+                     <li>
+                        <a href="holiday.html"><i class="fas fa-envelope"></i> <span>Professor Leave Request</span></a>
+                     </li>
+                     <li>
+                        <a href="holiday.html"><i class="fas fa-envelope"></i> <span>Student Leave Request</span></a>
+                     </li>
+                     <li>
+                        <a href="holiday.html"><i class="fas fa-calendar"></i> <span>View Attendance</span></a>
+                     </li>
+                     <li>
+                        <a href="{% url 'logout' %}"><i class="fas fa-sign-out-alt"></i> <span>Logout</span></a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+</body>
+</html>

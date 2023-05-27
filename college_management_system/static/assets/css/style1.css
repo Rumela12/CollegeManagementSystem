@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins',sans-serif;
+    list-style: none;
+}
+.header {
+    min-height: 100vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../img/college1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 4%;
+}
+nav a{
+    color: #fff;
+    font-size: x-large;
+    text-decoration: none;
+}
+nav a span{
+    color: #f1f111;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    display: inline-block;
+    margin: 5px 20px;
+}
+.nav-links ul li a{
+    font-size: 14px;
+    text-decoration: none;
+}
+.nav-links ul li a::after{
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0%;
+    background: #f1f111;
+    transition: 0.6s;
+}
+.nav-links ul li a:hover:after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 45px;
+}
+.text-box p{
+    font-size: 14px;
+}
+.text-box a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 40px;
+    border: 1px solid #fff;
+    margin-top: 10px;
+    background: transparent;
+    transition: .6s;
+}
+.text-box a:hover{
+    background: #f1f111;
+    border: 1px solid #fff;
+}
+nav .fa-solid{
+    display: none;
+    margin: 10px;
+}
+@media (max-width: 660px){
+    .text-box h1{
+        font-size: 28px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links ul {
+        padding: 20px;
+    }
+    .nav-links{
+        position: absolute;
+        height: 100vh;
+        width: 200px;
+        background: #f1f111;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+    }
+    nav .fa-solid{
+        display: block;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+}
+
+.container1
+{
+    margin:50px 10px;
+    width: 100%;
+    padding:8px;
+    display: flex;
+}
+.imgcontainer1{
+    border-radius: 20px;
+    margin-left: 5%;
+    width: 35%;
+    height:500px;
+    flex-direction: column;
+    padding: 0 10px 0 0;
+}
+.container1text{
+    margin-left: 5%;
+    width: 50%;
+    flex-direction: column  ;
+}
+.text
+{
+    margin-top: 30px;
+    text-align: justify;
+    font-family: verdana;
+}

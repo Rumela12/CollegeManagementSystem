@@ -22,9 +22,9 @@ def doLogin(request):
             if user_type == '1':
                 return redirect('hod_home')
             elif user_type == '2':
-                return HttpResponse('This is Professor ')
+                return redirect('staff_home')
             elif user_type == '3':
-                return HttpResponse('This is Student ')
+                return redirect('student_home')
             else:
                 messages.error(request,'Email and Password are Invalid!')
                 return redirect('login')
@@ -72,3 +72,7 @@ def PROFILE_UPDATE(request):
 
 
     return render(request, 'profile.html')
+
+
+def HOME(request):
+    return render(request, 'home.html')

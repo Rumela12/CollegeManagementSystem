@@ -22,6 +22,7 @@
                          {% endif %}
                          {% endfor %}
                          {% endif %}
+
                     {% if messages %}
                          {% for message in messages %}
                              {% if message.tags == 'warning' %}
@@ -33,3 +34,4 @@
                             </div>
                          {% endif %}
                          {% endfor %}
+                    {% endif %}

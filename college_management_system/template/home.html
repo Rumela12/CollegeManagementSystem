@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+      <title>College Management System</title>
+<!--      <link rel="shortcut icon" href="{% static 'assets/img/favicon.png' %}">-->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="{% static 'assets/css/style1.css' %}">
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href=""><span>Hope</span>College</a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="#aboutus">ABOUT</a></li>
+                    <li><a href="{% url 'login' %}">LOGIN</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>World's Best Institute</h1>
+            <p>Join Our University for the best of Education and Enjoy your university life with the best education system available</p>
+            <a href="#aboutus">Our History</a>
+        </div>
+    </section>
+    <section>
+        <div class="container1" id="aboutus">
+            <img class="imgcontainer1" src="{% static 'assets/img/college2.jpg' %}" alt="images">
+            <div class="container1text">
+                <div class="botton1" >
+                    <h2 style="margin-bottom:20px; font-weight: bold;">OUR HISTORY</h2>
+                    <h2 style="margin-bottom:20px ;">Our University has taken an oath to provide the best education for every student so they can reach new heights.</h2>
+               </div>
+               <div class="text" style="padding-bottom: 50px;">
+                The University of London is the UK’s leading provider of digital and blended distance education internationally, offering programmes to 45,000 students in 190 countries around the world. Although proudly rooted in London, our community and impact are global.
+                <br>
+                We are a national leader in the humanities, and we promote their value to society and the economy through knowledge creation and exchange.
+                 <br>
+                We are also a federation of 17 esteemed higher education institutions, with collaboration at the heart of our ethos. The University of London federation is a collective community of more than 240,000 learners and 50,000 staff, delivering world-leading research across all disciplines.
+               </div>
+               <a href="{% url 'login' %}"><button type="button" style="font-weight: bold; width:80px;
+               color: #fff;
+               width: 20%;
+               font-size: 18px;
+               padding: 7px 0;
+               background: rgb(129, 129, 221);
+               border: 0;
+               border-radius: 10px;
+               outline: none;">Login</button></a>
+            </div>
+        </div>
+    </section>
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showMenu(){
+            navlinks.style.right = "0";
+        }
+        function closeMenu(){
+            navlinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
